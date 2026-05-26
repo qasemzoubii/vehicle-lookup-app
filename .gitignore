@@ -1,0 +1,14 @@
+# .NET
+VehicleLookup/bin/
+VehicleLookup/obj/
+
+# React
+vehicle-lookup-frontend/node_modules/
+vehicle-lookup-frontend/build/
+
+# Docker
+.docker/
+
+# OS
+.DS_Store
+Thumbs.db

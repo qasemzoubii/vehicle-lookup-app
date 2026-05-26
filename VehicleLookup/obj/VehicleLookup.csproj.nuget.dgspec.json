@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\CarseerAssignment\\vehicle-lookup-app\\VehicleLookup\\VehicleLookup.csproj": {}
+    "C:\\CarseerAssignment\\vehicle-lookup-app\\vehicleLookup\\VehicleLookup.csproj": {}
   },
   "projects": {
-    "C:\\CarseerAssignment\\vehicle-lookup-app\\VehicleLookup\\VehicleLookup.csproj": {
+    "C:\\CarseerAssignment\\vehicle-lookup-app\\vehicleLookup\\VehicleLookup.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\CarseerAssignment\\vehicle-lookup-app\\VehicleLookup\\VehicleLookup.csproj",
+        "projectUniqueName": "C:\\CarseerAssignment\\vehicle-lookup-app\\vehicleLookup\\VehicleLookup.csproj",
         "projectName": "VehicleLookup",
-        "projectPath": "C:\\CarseerAssignment\\vehicle-lookup-app\\VehicleLookup\\VehicleLookup.csproj",
+        "projectPath": "C:\\CarseerAssignment\\vehicle-lookup-app\\vehicleLookup\\VehicleLookup.csproj",
         "packagesPath": "C:\\Users\\qasim.z\\.nuget\\packages\\",
-        "outputPath": "C:\\CarseerAssignment\\vehicle-lookup-app\\VehicleLookup\\obj\\",
+        "outputPath": "C:\\CarseerAssignment\\vehicle-lookup-app\\vehicleLookup\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

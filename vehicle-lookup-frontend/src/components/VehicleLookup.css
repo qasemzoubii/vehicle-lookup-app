@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f0f2f5;
+  background: #ffe9d4;
   color: #333;
 }
 
@@ -76,7 +76,7 @@ h1 {
 }
 
 .filter-group select:focus {
-  border-color: #4361ee;
+  border-color: #ff9933;
   background: #fff;
 }
 
@@ -86,7 +86,7 @@ h1 {
 }
 
 .loading {
-  color: #4361ee;
+  color: #ff9933;
   font-size: 0.9rem;
   padding: 10px 0;
 }
@@ -121,8 +121,8 @@ h1 {
 }
 
 .model-card {
-  background: #f8f9ff;
-  border: 1px solid #e8ecff;
+  background: #fff7ef;
+  border: 1px solid #ffe9d4;
   border-radius: 8px;
   padding: 14px 16px;
   display: flex;
@@ -134,6 +134,7 @@ h1 {
 .model-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(67, 97, 238, 0.15);
+  cursor: pointer;
 }
 
 .model-name {
@@ -144,5 +145,5 @@ h1 {
 
 .make-name {
   font-size: 0.8rem;
-  color: #4361ee;
+  color: #ff9933 ;
 }

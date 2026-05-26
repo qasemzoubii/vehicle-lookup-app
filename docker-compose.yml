@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./VehicleLookup
+      dockerfile: Dockerfile
+    container_name: vehicle-backend
+    ports:
+      - "5215:5215"
+    networks:
+      - vehicle-network
+
+  frontend:
+    build:
+      context: ./vehicle-lookup-frontend
+      dockerfile: Dockerfile
+    container_name: vehicle-frontend
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+    networks:
+      - vehicle-network
+
+networks:
+  vehicle-network:
+    driver: bridge

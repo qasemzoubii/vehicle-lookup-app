@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./VehicleLookup.css";
 
-const API_BASE = "http://localhost:5215/api/vehicle";
+const API_BASE =
+  "http://localhost:5215/api/vehicle" || process.env.REACT_APP_API_URL;
 
 function VehicleLookup() {
   const [makes, setMakes] = useState([]);
@@ -79,7 +80,7 @@ function VehicleLookup() {
 
   return (
     <div className="container">
-      <h1>🚗 Vehicle Lookup</h1>
+      <h1>🚗 Vehicle Lookup 🚗</h1>
       <p className="subtitle">Search vehicle models by make, year, and type</p>
 
       {error && <div className="error">{error}</div>}
@@ -105,23 +106,6 @@ function VehicleLookup() {
           )}
         </div>
 
-        {/* Year Dropdown */}
-        <div className="filter-group">
-          <label>Manufacture Year</label>
-          <select
-            value={selectedYear}
-            onChange={(e) => setSelectedYear(e.target.value)}
-            disabled={!selectedMake}
-          >
-            <option value="">-- Select Year --</option>
-            {years.map((year) => (
-              <option key={year} value={year}>
-                {year}
-              </option>
-            ))}
-          </select>
-        </div>
-
         {/* Vehicle Type */}
         <div className="filter-group">
           <label>Vehicle Type</label>
@@ -141,6 +125,22 @@ function VehicleLookup() {
               ))}
             </select>
           )}
+        </div>
+        {/* Year Dropdown */}
+        <div className="filter-group">
+          <label>Manufacture Year</label>
+          <select
+            value={selectedYear}
+            onChange={(e) => setSelectedYear(e.target.value)}
+            disabled={!selectedMake}
+          >
+            <option value="">-- Select Year --</option>
+            {years.map((year) => (
+              <option key={year} value={year}>
+                {year}
+              </option>
+            ))}
+          </select>
         </div>
       </div>
 
