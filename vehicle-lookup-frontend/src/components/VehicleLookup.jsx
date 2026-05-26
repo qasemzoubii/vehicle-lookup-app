@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./VehicleLookup.css";
 
 const API_BASE =
-  "http://localhost:5215/api/vehicle" || process.env.REACT_APP_API_URL;
+  process.env.REACT_APP_API_URL || "http://13.51.237.47:5215/api/vehicle";
 
 function VehicleLookup() {
   const [makes, setMakes] = useState([]);
