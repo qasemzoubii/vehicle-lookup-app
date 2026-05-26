@@ -15,6 +15,8 @@ services:
     build:
       context: ./vehicle-lookup-frontend
       dockerfile: Dockerfile
+      args:
+        - REACT_APP_API_URL=http://13.51.237.47:5215/api/vehicle
     container_name: vehicle-frontend
     ports:
       - "3000:80"
